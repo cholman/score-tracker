@@ -3,7 +3,7 @@ import { Button } from "@material-ui/core";
 import { useHistory, Redirect, Link } from "react-router-dom";
 import { ScoreContext } from "../contexts/scoreContext";
 
-export default function submitForm() {
+export default function SubmitForm(){
   const history = useHistory();
   const store = useContext(ScoreContext);
 
@@ -102,3 +102,4 @@ export default function submitForm() {
     </form>
   );
 }
+

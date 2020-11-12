@@ -23,7 +23,7 @@ export default function App() {
   return (
     <ScoreContext.Provider value={{ scores, setScores }}>
       <Router>
-        <Switch>
+        <Switch>``
           <div className="App">
             <Route exact path="/" component={SubmitForm} />
             <Route path="/YourScores">

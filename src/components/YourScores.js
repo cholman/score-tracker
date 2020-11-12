@@ -4,7 +4,7 @@ import { DataGrid, RowsProp, ColDef } from "@material-ui/data-grid";
 import { Redirect, useHistory } from "react-router-dom";
 import { ScoreContext } from "../contexts/scoreContext";
 
-export default YourScores = (props) => {
+function YourScores(props){
   const history = useHistory();
   const store = useContext(ScoreContext);
   const backToSubmit = () => {
@@ -54,3 +54,5 @@ export default YourScores = (props) => {
   //   );
   // });
 };
+
+export default YourScores;
