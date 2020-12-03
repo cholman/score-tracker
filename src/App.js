@@ -4,6 +4,7 @@ import "./styles.css";
 import SubmitForm from "./components/SubmitForm";
 import YourScores from "./components/YourScores";
 import { ScoreContext } from "./contexts/scoreContext";
+import Header from './components/Header';
 
 export default function App() {
   const [scores, setScores] = useState([
@@ -25,6 +26,7 @@ export default function App() {
       <Router>
         <Switch>``
           <div className="App">
+            <Header />
             <Route exact path="/" component={SubmitForm} />
             <Route path="/YourScores">
               <YourScores />
