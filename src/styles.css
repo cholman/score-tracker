@@ -9,3 +9,51 @@ form {
   flex-direction: column;
   max-width: 250px;
 }
+
+label {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.marv {
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.perfect {
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:gold;
+}
+.great {
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: limegreen;
+}
+.good{
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightblue;
+}
+.ok {
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+}
+.miss {
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: pink;
+}
+.ex {
+  font-weight: bold;
+  background: black;
+  font-size: 2rem;
+  color: yellow;
+}

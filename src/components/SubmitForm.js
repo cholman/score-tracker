@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory, Redirect, Link } from "react-router-dom";
 import { ScoreContext } from "../contexts/scoreContext";
+import { yellow } from "@material-ui/core/colors";
 
 export default function SubmitForm(){
   const history = useHistory();
@@ -64,7 +65,7 @@ export default function SubmitForm(){
       <label for="marv">Score</label>
       <input type="number" label="score" name="score" onChange={handleChange} />
       <br />
-      <label for="marv">Marvelous</label>
+      <label for="marv" className="marv">MARVELOUS</label>
       <input
         type="number"
         label="marv"
@@ -72,7 +73,7 @@ export default function SubmitForm(){
         onChange={handleChange}
       />
       <br />
-      <label for="perfect">Perfect</label>
+      <label for="perfect" className="perfect">PERFECT</label>
       <input
         type="number"
         label="Perfect"
@@ -80,23 +81,23 @@ export default function SubmitForm(){
         onChange={handleChange}
       />
       <br />
-      <label for="great">Great</label>
+      <label for="great" className="great">GREAT</label>
       <input type="number" label="great" name="great" onChange={handleChange} />
       <br />
-      <label for="good">Good</label>
+      <label for="good" className="good" >GOOD</label>
       <input type="number" label="good" name="good" onChange={handleChange} />
       <br />
-      <label for="ok">O.K.</label>
+      <label for="ok" className="ok">O.K.</label>
       <input type="number" label="ok" name="ok" onChange={handleChange} />
       <br />
-      <label for="miss">Miss</label>
+      <label for="miss" className="miss">MISS</label>
       <input type="number" label="miss" name="miss" onChange={handleChange} />
       <br />
-      <label for="ex">EX SCORE</label>
+      <label for="ex" className="ex">EX SCORE</label>
       <input type="number" label="ex" name="ex" onChange={handleChange} />
       <br />
       <input type="file" label="image" name="image" onChange={onFileChange} />
-      <Button type="submit" onClick={handleSubmit}>
+      <Button variant="contained" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </form>
