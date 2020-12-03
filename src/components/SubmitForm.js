@@ -59,47 +59,54 @@ export default function SubmitForm(){
   return (
     <form>
       <h1>Submit a Score</h1>
-      <label for="title">Song Title</label>
-      <input type="text" name="title" label="title" onChange={handleChange} />
-      <br />
-      <label for="marv">Score</label>
-      <input type="number" label="score" name="score" onChange={handleChange} />
-      <br />
-      <label for="marv" className="marv">MARVELOUS</label>
-      <input
-        type="number"
-        label="marv"
-        name="marvelous"
-        onChange={handleChange}
-      />
-      <br />
-      <label for="perfect" className="perfect">PERFECT</label>
-      <input
-        type="number"
-        label="Perfect"
-        name="perfect"
-        onChange={handleChange}
-      />
-      <br />
-      <label for="great" className="great">GREAT</label>
-      <input type="number" label="great" name="great" onChange={handleChange} />
-      <br />
-      <label for="good" className="good" >GOOD</label>
-      <input type="number" label="good" name="good" onChange={handleChange} />
-      <br />
-      <label for="ok" className="ok">O.K.</label>
-      <input type="number" label="ok" name="ok" onChange={handleChange} />
-      <br />
-      <label for="miss" className="miss">MISS</label>
-      <input type="number" label="miss" name="miss" onChange={handleChange} />
-      <br />
-      <label for="ex" className="ex">EX SCORE</label>
-      <input type="number" label="ex" name="ex" onChange={handleChange} />
-      <br />
-      <input type="file" label="image" name="image" onChange={onFileChange} />
+      <div className="form">
+        <div className="formLabels">
+          <label for="title">Song Title</label>
+          <label for="marv">Score</label>
+          <label for="marv" className="marv">MARVELOUS</label>
+          <label for="perfect" className="perfect">PERFECT</label>
+          <label for="great" className="great">GREAT</label>
+          <label for="good" className="good" >GOOD</label>
+          <label for="ok" className="ok">O.K.</label>
+          <label for="miss" className="miss">MISS</label>
+          <label for="ex" className="ex">EX SCORE</label>
+        </div>
+        <div className="formInput">
+          <input type="text" name="title" label="title" onChange={handleChange} />
+          <br />
+          <input type="number" label="score" name="score" onChange={handleChange} />
+          <br />
+          <input
+            type="number"
+            label="marv"
+            name="marvelous"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            type="number"
+            label="Perfect"
+            name="perfect"
+            onChange={handleChange}
+          />
+          <br />
+          <input type="number" label="great" name="great" onChange={handleChange} />
+          <br />
+          <input type="number" label="good" name="good" onChange={handleChange} />
+          <br />
+          <input type="number" label="ok" name="ok" onChange={handleChange} />
+          <br />
+          <input type="number" label="miss" name="miss" onChange={handleChange} />
+          <br />
+          <input type="number" label="ex" name="ex" onChange={handleChange} />
+          <br />
+          <input type="file" label="image" name="image" onChange={onFileChange} />
+          
+        </div>
+      </div>
       <Button variant="contained" type="submit" onClick={handleSubmit}>
-        Submit
-      </Button>
+            Submit
+          </Button>
     </form>
   );
 }
