@@ -39,11 +39,14 @@ export default function SubmitForm(){
     event.preventDefault();
     const exscore =
       score.marvelous * 3 + score.perfect * 2 + score.great * 1 + score.ok * 3;
+      //check if valid score
     if (score.ex && exscore == score.ex) {
       console.log(`you submitted ${score}`);
       store.setScores(() => {
         return [...store.scores, score];
       });
+      //store scores in localStorage
+      localStorage.setItem("scores", JSON.stringify(store.scores))
       console.log("scores:", store.scores);
       history.push("/YourScores");
     } else if (score.ex) {
