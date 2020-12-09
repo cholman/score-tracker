@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { DataGrid, RowsProp, ColDef } from "@material-ui/data-grid";
 import { Redirect, useHistory } from "react-router-dom";
@@ -11,6 +11,8 @@ function YourScores(props){
     history.push("/");
   };
   let i = 0;
+
+  
   const rows: RowsProp = store.scores.map((score) => {
     return {
       id: i++,

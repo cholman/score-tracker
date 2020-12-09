@@ -20,6 +20,10 @@ export default function App() {
       ex: 90
     }
   ]);
+  
+  useEffect(() => {
+    localStorage.setItem('scores', JSON.stringify(scores))
+  }, [scores])
 
   return (
     <ScoreContext.Provider value={{ scores, setScores }}>
